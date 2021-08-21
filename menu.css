@@ -318,12 +318,12 @@ button:hover
 
 /* Footer */
 
-.footer
+footer
 {
     padding:20px;
     background-color:#353535;
 }
-.footer h1
+footer h1
 {
     text-align:left;
     font-size:20px;
@@ -332,12 +332,12 @@ button:hover
 }
 @media screen and (min-width:700px)
 {
-    .footer h1
+    footer h1
     {
         text-align:center;
     }
 }
-.footer ul
+footer ul
 {
     list-style-type:none;
     margin:0 0 20px 0;
@@ -345,14 +345,14 @@ button:hover
 }
 @media screen and (min-width:700px)
 {
-    .footer ul
+    footer ul
     {
         display:flex;
         justify-content:center;
         column-gap: 5%;
     }
 }
-.footer a
+footer a
 {
     display:flex;
     color:white;
@@ -360,7 +360,7 @@ button:hover
     font-weight:300;
     line-height:2;
 }
-.footer i
+footer i
 {
     display:flex;
     align-items:center;
