@@ -5,6 +5,14 @@ body
 {
     margin:0;
 }
+h1
+{
+    margin:0;
+    padding:15px 0;
+    font-family:"Shrikhand";
+    font-size:30px;
+    text-align:center;
+}
 h2
 {
     margin:0;
@@ -34,7 +42,7 @@ a
 
 /* Spinner */
 
-.load_screen
+.loadscreen
 {
     position:fixed;
     z-index:1;
@@ -59,58 +67,72 @@ a
       z-index:-1;
     }
 }
-.spinner_big 
+.spinner
 {
     position:absolute;
+    border-radius:50%;
+}
+.spinner--big
+{
     width:136px;
     height:136px;
     border:24px solid rgba(161, 160, 160, 0);
     border-bottom:24px solid #9356dc;
     border-left:24px solid #9356dc;
-    border-radius:50%;
     border-top:24px solid #9356dc;
-    animation:spinnerleft 0.8s 0.2s 5;
+    animation:spinner-left 0.8s 0.2s 5;
 }
-.spinner_small 
+.spinner--medium
 {
-    position:absolute;
+    height:80px;
+    width:80px;
+    border:16px solid rgba(161, 160, 160, 0);
+    border-bottom:16px solid #ff79da;
+    border-right:16px solid #ff79da;
+    border-top:16px solid #ff79da;
+    animation:spinner-right 0.8s 0.2s 5;
+}
+.spinner--small 
+{
     width:40px;
     height:40px;
     border:12px solid rgba(161, 160, 160, 0);
     border-bottom:12px solid #99e2d0;
     border-left:12px solid #99e2d0;
-    border-radius:50%;
     border-top:12px solid #99e2d0;
-    animation:spinnerleft 0.8s 0.2s 5;
+    animation:spinner-left 0.8s 0.2s 5;
 }
 @media screen and (min-width:700px)
 {
-    .spinner_big 
+    .spinner--big
     {
-        position:absolute;
         width:272px;
         height:272px;
         border:48px solid rgba(161, 160, 160, 0);
         border-bottom:48px solid #9356dc;
         border-left:48px solid #9356dc;
-        border-radius:50%;
         border-top:48px solid #9356dc;
-        animation:spinnerleft 0.8s 0.2s 5;
     }
-    .spinner_small 
+    .spinner--medium
     {
-        position:absolute;
+        height:160px;
+        width:160px;
+        border:32px solid rgba(161, 160, 160, 0);
+        border-bottom:32px solid #ff79da;
+        border-right:32px solid #ff79da;
+        border-top:32px solid #ff79da;
+    }
+    .spinner--small
+    {
         width:80px;
         height:80px;
         border:24px solid rgba(161, 160, 160, 0);
         border-bottom:24px solid #99e2d0;
         border-left:24px solid #99e2d0;
-        border-radius:50%;
         border-top:24px solid #99e2d0;
-        animation:spinnerleft 0.8s 0.2s 5;
     }
 }
-@keyframes spinnerleft 
+@keyframes spinner-left 
 {
     from 
     {
@@ -121,34 +143,7 @@ a
         transform:rotate(0deg);
     }
 }
-.spinner_medium
-{
-    position:absolute;
-    height:80px;
-    width:80px;
-    border:16px solid rgba(161, 160, 160, 0);
-    border-bottom:16px solid #ff79da;
-    border-radius:50%;
-    border-right:16px solid #ff79da;
-    border-top:16px solid #ff79da;
-    animation:spinnerright 0.8s 0.2s 5;
-}
-@media screen and (min-width:700px)
-{
-    .spinner_medium
-    {
-        position:absolute;
-        height:160px;
-        width:160px;
-        border:32px solid rgba(161, 160, 160, 0);
-        border-bottom:32px solid #ff79da;
-        border-radius:50%;
-        border-right:32px solid #ff79da;
-        border-top:32px solid #ff79da;
-        animation:spinnerright 0.8s 0.2s 5;
-    }
-}
-@keyframes spinnerright 
+@keyframes spinner-right 
 {
     from 
     {
@@ -166,14 +161,6 @@ header
 {
     position:relative;
     box-shadow:0 0 7px grey;
-}
-h1
-{
-    margin:0;
-    padding:15px 0;
-    font-family:"Shrikhand";
-    font-size:30px;
-    text-align:center;
 }
 
 /* Main - Location */
@@ -280,6 +267,7 @@ h1
 {
     opacity:0.75;
     box-shadow:0 10px 10px #dddddd;
+    transform:scale(1.02);
     cursor:pointer;
 }
 .tuto span
@@ -347,6 +335,7 @@ article
 {
     opacity:0.75;
     box-shadow:0 10px 10px #dddddd;
+    transform:scale(1.02);
     cursor:pointer;
 }
 .restautant img
@@ -482,7 +471,6 @@ footer a
 }
 footer i
 {
-    display:flex;
-    align-items:center;
+    margin:auto;
     width:30px;
 }

@@ -236,14 +236,14 @@ article:nth-child(5)
 }
 .description
 {
-    display:flex;
+    display:flex; 
     justify-content:space-between;
     flex:1;
     height:70px;
     border-radius:10px;
     background-color:white;
 }
-.description_text
+.description__text
 {
     overflow:hidden;
     white-space:nowrap;
@@ -257,7 +257,7 @@ article:nth-child(5)
 }
 .check
 {
-    display:flex;
+    display:flex; 
     align-items:center;
     justify-content:center;
     float:right;
@@ -277,7 +277,7 @@ article:hover .check
 }
 article:hover .check i
 {
-    transform:rotate(360deg);
+    transform:rotate(-360deg);
     transition-duration:1s;
 }
 
@@ -349,7 +349,7 @@ footer ul
     {
         display:flex;
         justify-content:center;
-        column-gap: 5%;
+        column-gap:5%;
     }
 }
 footer a
@@ -362,7 +362,6 @@ footer a
 }
 footer i
 {
-    display:flex;
-    align-items:center;
+    margin:auto;
     width:30px;
 }
