@@ -26,8 +26,9 @@ h4
     margin:10px 0 10px 10px;
     font-family:"Roboto";
     font-size:17px;
-    overflow:hidden;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 h5
 {
@@ -40,8 +41,9 @@ p
     font-family:"Roboto";
     font-weight:300;
     color:black;
-    overflow: hidden;
     text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 a
 {
@@ -200,6 +202,7 @@ article
     opacity:0;
     animation:article 1s forwards;
     cursor:pointer;
+    overflow: hidden;
 }
 @keyframes article 
 {
@@ -241,12 +244,14 @@ article:nth-child(5)
     flex:1;
     height:70px;
     border-radius:10px;
-    background-color:white;
+    overflow: hidden;
+
 }
 .description__text
 {
-    overflow:hidden;
-    white-space:nowrap;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .description h5
 {
