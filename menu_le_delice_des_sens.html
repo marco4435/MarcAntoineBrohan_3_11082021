@@ -3,7 +3,7 @@
     <!-- Initialisation -->
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/89bca5afd6.js" crossorigin="anonymous"></script>
         <title>ohmyfood - Le délice des sens</title>
@@ -18,22 +18,22 @@
         <img src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="img presentation">
         <main>
             <header>
-                <h2>La palette du goût</h2>
-                <span class="card_heart">
+                <h6>La palette du goût</h6>
+                <div class="heart">
                     <i class="far fa-heart hollow"></i>
                     <i class="fas fa-heart full"></i>
-                </span>
+                </div>
             </header>
             <div class="menu">
                 <section>
-                    <h3 id="h3_1">ENTRÉES</h3>
+                    <h5>ENTRÉES</h5>
                     <article>
                         <div class="description">  
-                            <div class="description_text">
+                            <div class="description__text">
                                 <h4>Tartare de Thon</h4>
                                 <p>Assaisonné au yuzu</p>
                             </div>
-                            <h5>25€</h5>
+                            <h4 class="price">25€</h4>
                         </div> 
                         <div class="check">
                             <i class="fas fa-check-circle"></i>
@@ -41,11 +41,11 @@
                     </article>
                     <article>
                         <div class="description">   
-                            <div class="description_text">
+                            <div class="description__text">
                                 <h4>Bouchée de homard croustillant</h4>
                                 <p>Et sa farandole de petits légumes</p>
                             </div>
-                            <h5>35€</h5>
+                            <h4 class="price">35€</h4>
                         </div> 
                         <div class="check">
                             <i class="fas fa-check-circle"></i>
@@ -53,11 +53,11 @@
                     </article>
                     <article>
                         <div class="description">
-                            <div class="description_text">
+                            <div class="description__text">
                                 <h4>Vélouté de cèpes</h4>
                                 <p>Aus truffes</p>
                             </div>
-                            <h5>20€</h5>
+                            <h4 class="price">20€</h4>
                         </div>
                         <div class="check">
                             <i class="fas fa-check-circle"></i>
@@ -65,14 +65,14 @@
                     </article>
                 </section>
                 <section>
-                    <h3 id="h3_2">PLATS</h3>
+                    <h5>PLATS</h5>
                     <article>
                         <div class="description">  
-                            <div class="description_text">
+                            <div class="description__text">
                                 <h4>Poulet rôti aux herbes de provence</h4>
                                 <p>Et sa crème de truffe</p>
                             </div>
-                            <h5>40€</h5>
+                            <h4 class="price">40€</h4>
                         </div> 
                         <div class="check">
                             <i class="fas fa-check-circle"></i>
@@ -80,11 +80,11 @@
                     </article>
                     <article>
                         <div class="description">   
-                            <div class="description_text">
+                            <div class="description__text">
                                 <h4>Langouste rôtie</h4>
                                 <p>Et ses légumes de saison</p>
                             </div>
-                            <h5>35€</h5>
+                            <h4 class="price">35€</h4>
                         </div> 
                         <div class="check">
                             <i class="fas fa-check-circle"></i>
@@ -92,11 +92,11 @@
                     </article>
                     <article>
                         <div class="description">
-                            <div class="description_text">
+                            <div class="description__text">
                                 <h4>Côte de boeuf angus</h4>
                                 <p>Et sa purée de panais</p>
                             </div>
-                            <h5>44€</h5>
+                            <h4 class="price">44€</h4>
                         </div>
                         <div class="check">
                             <i class="fas fa-check-circle"></i>
@@ -104,14 +104,14 @@
                     </article>
                 </section>
                 <section>
-                    <h3 id="h3_3">DESSERTS</h3>
+                    <h5>DESSERTS</h5>
                     <article>
                         <div class="description">  
-                            <div class="description_text">
+                            <div class="description__text">
                                 <h4>Farandole de desserts</h4>
                                 <p>Du chef</p>
                             </div>
-                            <h5>18€</h5>
+                            <h4 class="price">18€</h4>
                         </div> 
                         <div class="check">
                             <i class="fas fa-check-circle"></i>
@@ -119,11 +119,11 @@
                     </article>
                     <article>
                         <div class="description">   
-                            <div class="description_text">
+                            <div class="description__text">
                                 <h4>Crème brûlée</h4>
                                 <p>Revisitée</p>
                             </div>
-                            <h5>22€</h5>
+                            <h4 class="price">22€</h4>
                         </div> 
                         <div class="check">
                             <i class="fas fa-check-circle"></i>
@@ -131,11 +131,11 @@
                     </article>
                     <article>
                         <div class="description">
-                            <div class="description_text">
+                            <div class="description__text">
                                 <h4>Tiramisu</h4>
                                 <p>À la noisette</p>
                             </div>
-                            <h5>23€</h5>
+                            <h4 class="price">23€</h4>
                         </div>
                         <div class="check">
                             <i class="fas fa-check-circle"></i>
@@ -148,12 +148,12 @@
             </div>
         </main>
         <footer>
-            <h1>ohmyfood</h1>
+            <h6>ohmyfood</h6>
             <ul>
-                <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-                <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+                <li><a href="#" title="footer"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#" title="footer"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                <li><a href="#" title="footer">Mentions légales</a></li>
+                <li><a href="mailto:contact@ohmyfood.com" title="footer">Contact</a></li>
             </ul>
         </footer>
     </body>
