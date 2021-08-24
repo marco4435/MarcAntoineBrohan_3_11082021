@@ -451,6 +451,9 @@ button:hover {
   font-size: 25px;
   background-color: white;
 }
+.restaurant figure figcaption .heart .hollow {
+  background-color: white;
+}
 .restaurant span {
   position: relative;
   padding: 7px 10px;
