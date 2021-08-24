@@ -1,0 +1,92 @@
+/* Keyframes */
+
+@keyframes article {
+    from {
+        transform:translatey(10px);
+        opacity:0;
+    }
+    to {
+        transform:translatey(0px);
+        opacity:1;
+    }
+}
+article:nth-child(1) {
+    animation-delay:0.2s;
+}
+article:nth-child(2) {
+    animation-delay:0.4s;
+}
+article:nth-child(3) {
+    animation-delay:0.6s;
+}
+article:nth-child(4) {
+    animation-delay:0.8s;
+}
+article:nth-child(5) {
+    animation-delay:1s;
+}
+@keyframes fadeout {
+    from {
+        opacity:1;
+        z-index:1;
+    }
+    to {
+        opacity:0;
+        z-index:-1;
+    }
+}
+@keyframes spinner-left {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+@keyframes spinner-right {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* Mixins */
+
+@mixin box-hover {
+    box-shadow:0 10px 10px $shadow;
+    opacity:0.75;
+    cursor:pointer;
+}
+
+@mixin heart {
+    .heart {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-right:25px;
+        font-size:25px;
+        .full {
+            background:-webkit-linear-gradient($primary, $secondary);
+            background-clip:unset;
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+        .hollow {
+            position:absolute;
+            color:$black;
+            cursor:pointer;
+            &:hover {
+            opacity:0;
+            transition-duration:1s;
+            }
+        }
+    }
+}
+
+/* Placeholders */
+
+.row-gap {
+    row-gap:20px;
+}

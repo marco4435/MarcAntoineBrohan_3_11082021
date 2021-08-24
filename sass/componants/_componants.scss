@@ -1,0 +1,18 @@
+button {
+    padding:10px 30px;  
+    border:0;
+    font-family:"Roboto";
+    font-size:15px;
+    font-weight:500;
+    border-radius:100px;
+    color:$white;
+    background-color:$shadow;
+    background-image:linear-gradient(to top,$primary,$secondary);
+    box-shadow:5px 5px 10px $shadow;
+    cursor:pointer;
+    &:hover {
+        opacity:0.75;
+        box-shadow:8px 8px 10px $shadow;
+        color:$black;
+    }
+}

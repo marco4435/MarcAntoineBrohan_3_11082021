@@ -1,0 +1,170 @@
+/* Main - Location */
+
+.location {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:auto;
+    padding:10px 0;
+    margin-left:-20px;
+    background-color:$background-grey1;
+    @media screen and (min-width:700px) {
+        margin-left:0;
+    }
+    i {
+        margin-right:18px;
+    }
+}
+
+/* Main - Search */
+
+.search {
+    height:auto;
+    text-align:center;
+    padding:30px 30px 60px 30px;
+    background-color:$background-grey2;
+    p {
+        margin:0 0 50px 0;
+    }
+    h3 {
+        margin-top:0;
+    }
+}
+
+/* Main - Tuto */
+
+.tuto {
+    height:auto;
+    text-align:center;
+    padding:30px 30px 50px 30px;
+    background-color:$white;
+    h2 {
+        margin:0;
+    }
+    h3 {
+        text-align:left;
+    }
+    a {
+        display:flex;
+        align-items:center;
+        padding:20px 30px;
+        border-radius:25px;
+        background-color:$background-grey2;
+        box-shadow:0 5px 10px $shadow;
+        &:hover{
+            @include box-hover;
+            transform:scale(1.02);
+        }
+    }
+    i {
+        width:25px;
+        font-size:20px;
+        margin-right:20px;
+        text-align:center;
+        color:$shadow;
+    }
+    li {
+        @media screen and (min-width:1000px) {
+            width:31%;
+        }
+    }
+    span {
+        font-family:"Roboto";
+        font-weight:500;
+        padding:5px 10px;
+        margin:0 20px 0 -45px;
+        border-radius:100px;
+        background-color:$primary;
+        color:white;
+    }
+    ul {
+        display:flex;
+        flex-direction:column;
+        @extend .row-gap;
+        padding-left:10px;
+        list-style-type:none;
+        @media screen and (min-width:1000px) {
+            flex-direction:row;
+            justify-content:space-between;
+        }
+    }
+}
+#violet {
+    color:$primary;
+}
+
+/* Main - Restaurant */
+
+.restaurant {
+    padding:30px 20px 50px 20px;
+    background-color:$background-grey2;
+    h2 {
+        padding-bottom:5px;
+    }
+    h3 {
+        margin:20px 0;
+    }
+    a {
+        height:265px;
+        border-radius:15px;
+        background-color:$white;
+        box-shadow:0 5px 10px $shadow;
+        &:hover {
+            @include box-hover;
+            transform:scale(1.02);
+        }
+    }
+    article {
+        display:flex;
+        flex-direction:column;
+        @extend .row-gap;
+        background-color:$background-grey2;
+        @media screen and (min-width:700px) {
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            column-gap:20px;
+            @extend .row-gap;
+        }
+    }
+    figure {
+        margin:0;
+        img {
+            height:180px;
+            width:100%;
+            object-fit:cover;
+            border-radius:15px 15px 0 0;
+        }
+        figcaption {
+            display:flex;
+            justify-content:space-between;
+            padding:10px 15px 0 15px;
+            h4 {
+                margin:0 0 10px 0;
+            }
+            p {
+                margin:0;
+            }
+            @include heart;
+            .heart {
+                margin-right:25px;
+                font-size:25px;
+                background-color:$white;
+            }
+        }
+    }
+    span {
+        position:relative;
+        padding:7px 10px;
+        top:-85%;
+        margin-left:70%;
+        font-family:"Roboto";
+        font-size:16px;
+        font-weight:700;
+        background-color:$tertiary;
+        border-radius:3px;
+        color:$background-green;
+        @media screen and (min-width:1000px) {
+        margin-left:80%;
+        }
+    }
+}
