@@ -55,7 +55,7 @@ article:nth-child(5) {
 /* Mixins */
 
 @mixin box-hover {
-    box-shadow:0 10px 10px $shadow;
+    box-shadow:0 5px 10px 2px $shadow;
     opacity:0.75;
     cursor:pointer;
 }

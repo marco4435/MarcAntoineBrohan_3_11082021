@@ -326,7 +326,7 @@ button:hover {
   box-shadow: 0 5px 10px grey;
 }
 .tuto a:hover {
-  box-shadow: 0 10px 10px grey;
+  box-shadow: 0 5px 10px 2px grey;
   opacity: 0.75;
   cursor: pointer;
   transform: scale(1.02);
@@ -387,7 +387,7 @@ button:hover {
   box-shadow: 0 5px 10px grey;
 }
 .restaurant a:hover {
-  box-shadow: 0 10px 10px grey;
+  box-shadow: 0 5px 10px 2px grey;
   opacity: 0.75;
   cursor: pointer;
   transform: scale(1.02);
@@ -536,14 +536,12 @@ main .heart .hollow {
   .menu {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
   }
 }
 @media screen and (min-width: 1000px) {
   .menu {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 1fr;
     margin: 0 auto;
   }
 }
@@ -582,7 +580,7 @@ main .heart .hollow {
   animation: article 1s forwards;
 }
 .menu article:hover {
-  box-shadow: 0 10px 10px grey;
+  box-shadow: 0 5px 10px 2px grey;
   opacity: 0.75;
   cursor: pointer;
 }

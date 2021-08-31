@@ -10,6 +10,7 @@ $background-grey2:#eeeeee;
 $background-green:rgb(43, 145, 43);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
+
 body {
     margin:0;
 }
@@ -21,7 +22,7 @@ p {
 h1 {
     font-family:"Shrikhand";
     font-size:30px;
-    color:black;
+    color:$black;
 }
 h2 {
     font-family:"Roboto";
