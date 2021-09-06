@@ -64,7 +64,7 @@
         color:$shadow;
     }
     li {
-        @media screen and (min-width:1000px) {
+        @media screen and (min-width:1150px) {
             width:31%;
         }
     }
@@ -83,7 +83,7 @@
         @extend .row-gap;
         padding-left:10px;
         list-style-type:none;
-        @media screen and (min-width:1000px) {
+        @media screen and (min-width:1150px) {
             flex-direction:row;
             justify-content:space-between;
         }
@@ -91,6 +91,9 @@
 }
 #violet {
     color:$primary;
+}
+#background_color {
+    background-color:$background-grey3;
 }
 
 /* Main - Restaurant */
@@ -166,7 +169,7 @@
         background-color:$tertiary;
         border-radius:3px;
         color:$background-green;
-        @media screen and (min-width:1000px) {
+        @media screen and (min-width:1150px) {
         margin-left:80%;
         }
     }
