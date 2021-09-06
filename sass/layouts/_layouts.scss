@@ -13,7 +13,7 @@ $background-green:rgb(43, 145, 43);
 
 /* Spinner */
 
-.loadscreen {
+.spinner {
     position:fixed;
     z-index:1;
     display:flex;
@@ -23,8 +23,6 @@ $background-green:rgb(43, 145, 43);
     width:100%;
     background:$white;
     animation:fadeout 0.2s 3s forwards;
-}
-.spinner {
     &--big {
         position:absolute;
         border-radius:50%;
