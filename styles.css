@@ -1,7 +1,7 @@
 /* Variables */
 /* Spinner */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
-.spinner {
+.loadscreen {
   position: fixed;
   z-index: 1;
   display: flex;
@@ -12,6 +12,7 @@
   background: white;
   animation: fadeout 0.2s 3s forwards;
 }
+
 .spinner--big {
   position: absolute;
   border-radius: 50%;
